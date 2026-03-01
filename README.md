@@ -7,13 +7,13 @@
 
 <style>
   :root{
-    --bg:#f4f6fa;
-    --card:#ffffff;
-    --text:#111827;
-    --muted:#4b5563;
-    --brand:#0b4fb3;      /* HPHP-ish blue */
-    --brand2:#ff9800;     /* hover */
-    --shadow: 0 14px 35px rgba(0,0,0,.14);
+    --bg:#0f1117;
+    --card:#1e2130;
+    --text:#f3f4f6;
+    --muted:#9ca3af;
+    --brand:#3b82f6;      /* HPHP-ish blue */
+    --brand2:#fb923c;     /* hover */
+    --shadow: 0 14px 35px rgba(0,0,0,.40);
     --radius: 14px;
   }
 
@@ -47,8 +47,8 @@
   }
 
   .plan-section{
-    background: rgba(255,255,255,.6);
-    border: 1px solid rgba(17,24,39,.08);
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.10);
     border-radius: var(--radius);
     padding: 18px;
     margin-top: 18px;
@@ -76,10 +76,10 @@
   .toggle{
     display:flex;
     gap:8px;
-    background: rgba(11,79,179,.08);
+    background: rgba(59,130,246,.12);
     padding:6px;
     border-radius: 999px;
-    border: 1px solid rgba(11,79,179,.18);
+    border: 1px solid rgba(59,130,246,.28);
   }
   .toggle button{
     border:0;
@@ -94,7 +94,7 @@
   .toggle button.active{
     background: var(--brand);
     color: white;
-    box-shadow: 0 8px 18px rgba(11,79,179,.25);
+    box-shadow: 0 8px 18px rgba(59,130,246,.35);
   }
 
   .layout{
@@ -114,7 +114,7 @@
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     overflow: visible; /* allow pins outside */
-    border: 1px solid rgba(17,24,39,.08);
+    border: 1px solid rgba(255,255,255,.10);
     padding: 10px;     /* breathing room for outside pins */
   }
 
@@ -149,7 +149,7 @@
     font-weight: 800;
     font-size: 12px;
     cursor:pointer;
-    box-shadow: 0 6px 16px rgba(11,79,179,.26);
+    box-shadow: 0 6px 16px rgba(59,130,246,.35);
     display:flex;
     align-items:center;
     justify-content:center;
@@ -170,7 +170,7 @@
     top: 50%;
     width: var(--len, 60px);
     height: 2px;
-    background: rgba(11,79,179,.75);
+    background: rgba(59,130,246,.85);
     transform-origin: 0 50%;
     transform: rotate(var(--ang, 0deg));
     border-radius: 2px;
@@ -181,7 +181,7 @@
     background: var(--card);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
-    border: 1px solid rgba(17,24,39,.08);
+    border: 1px solid rgba(255,255,255,.10);
     padding: 18px;
     position: sticky;
     top: 14px;
@@ -203,7 +203,7 @@
     margin-top: 12px;
     padding: 12px;
     border-left: 4px solid var(--brand);
-    background: rgba(11,79,179,.06);
+    background: rgba(59,130,246,.10);
     border-radius: 10px;
   }
   .tip strong{ color: var(--text); }
@@ -216,7 +216,7 @@
   .divider{
     margin-top: 18px;
     height: 1px;
-    background: rgba(17,24,39,.10);
+    background: rgba(255,255,255,.10);
   }
 </style>
 </head>
